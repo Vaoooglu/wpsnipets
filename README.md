@@ -1,46 +1,61 @@
-There are my snippets for WordPress development
+<!-- There are my snippets for WordPress development -->
 
------------------ social link -----------------
+<!-- ----------------- social link ----------------- -->
+<pre>
 https://api.whatsapp.com/send?phone=79261135676
+</pre>
+<pre>
 href="viber://chat?number=%2B79261135676"
+</pre>
+<pre>
 href="tg://resolve?domain=nickname"
+</pre>
 
---------------start for each file php:-----------
+<!-- --------------start for each file php:----------- -->
+<?php
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
-
---------------Base for template page, post-----------------
+?>
+<!-- --------------Base for template page, post----------------- -->
+<?php 
 /*
 Template Name: Мой шаблон страницы
 Template Post Type: post, page, product
 */
+?>
 
 
---------------path for img:-----------------
+<!-- --------------path for img:----------------- -->
+<pre>
 <img src="<?=get_template_directory_uri();?>/img.jpg" width="300">
+</pre>
 
---------------link in header for logo-----------------
+<!-- --------------link in header for logo----------------- -->
+<pre>
 href="<?php if((is_front_page() || is_home())){echo 'javascript:void(0);';} else {echo get_home_url();}?>"
+</pre>
 
---------------often use next Plugin-----------------
-Cyr-To-Lat
-Cyr to Lat enhanced
-Imsanity
-Query Monitor
-All-in-One WP Migration
-Ajax Pagination and Infinite Scroll
-Duplicate Page
-WP-DB-Backup
-Responsive Lightbox (Author: subhansanjaya)
-Instagram Feed (Smash Balloon Social Photo Feed)
-Сортировка категорий и таксономия(иерархия) элементов   (Author: Nsp-Code)
-Post Types Order (Author: Nsp-Code)  into wp_query need 'orderby' =>'menu_order' 
-Regenerate Thumbnails  (Author: Alex Mills)
-Remove Category URL 
-Page scroll to id   (Author:malihu)
-Safe SVG
-Mobile Detect 
+<!-- --------------often use next Plugin----------------- -->
+<ul>
+<li>Cyr-To-Lat</li>
+<li>Cyr to Lat enhanced</li>
+<li>Imsanity</li>
+<li>Query Monitor</li>
+<li>All-in-One WP Migration</li>
+<li>Ajax Pagination and Infinite Scroll</li>
+<li>Duplicate Page</li>
+<li>WP-DB-Backup</li>
+<li>Responsive Lightbox (Author: subhansanjaya)</li>
+<li>Instagram Feed (Smash Balloon Social Photo Feed)</li>
+<li>Сортировка категорий и таксономия(иерархия) элементов   (Author: Nsp-Code)</li>
+<li>Post Types Order (Author: Nsp-Code)  into wp_query need 'orderby' =>'menu_order'</li> 
+<li>Regenerate Thumbnails  (Author: Alex Mills)</li>
+<li>Remove Category URL </li>
+<li>Page scroll to id   (Author:malihu)</li>
+<li>Safe SVG</li>
+<li>Mobile Detect</li> 
+</ul>
 <?php
 if ( wp_is_mobile() ) {
 	/* Include/display resources targeted to phones/tablets here */
@@ -49,7 +64,7 @@ if ( wp_is_mobile() ) {
 }
 ?>
 
-For site-blogs:
+<p>For site-blogs:</p>
 	
 LuckyWP Table of Contents (Author: LuckyWP) Создаёт содержание для ваших постов/страниц  
 AddToAny Share Buttons (Author: AddToAny)
